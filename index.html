@@ -1,0 +1,531 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Dev Kumar - Applied AI engineering work across agentic systems, RAG, text-to-SQL, LLM evaluation, guardrails, model routing, latency optimization, Python, FastAPI, LangChain, LlamaIndex, Snowflake, Spark, and production AI delivery."
+    />
+    <title>Dev Kumar | Applied AI Engineering</title>
+    <link rel="preload" href="./assets/applied-ai-hero.png" as="image" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <canvas id="signal-canvas" aria-hidden="true"></canvas>
+
+    <header class="site-header" data-header>
+      <a class="brand" href="#top" aria-label="Dev Kumar home">
+        <span class="brand-mark">DK</span>
+        <span>Dev Kumar</span>
+      </a>
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="#platform">Platform</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="hero-media" aria-hidden="true">
+          <img src="./assets/applied-ai-hero.png" alt="" />
+          <div class="scan-layer"></div>
+        </div>
+
+        <div class="hero-content reveal">
+          <p class="eyebrow">Applied AI engineering - agents, retrieval, evals, product delivery</p>
+          <h1>Production AI that answers clearly, acts carefully, and improves with evidence.</h1>
+          <p class="hero-copy">
+            I build AI products where retrieval, planning, tool use, data access, evaluation, guardrails, and
+            observability work as one system. My strongest work lives at the boundary between practical product
+            experiences and the engineering discipline needed to make intelligent software reliable.
+          </p>
+
+          <div class="dynamic-line" aria-live="polite">
+            <span class="line-label">Building</span>
+            <span id="dynamic-text"></span>
+          </div>
+
+          <div class="hero-actions">
+            <a class="button button-primary" href="#projects">View Projects</a>
+            <a class="button button-secondary" href="https://github.com/devthedevil" target="_blank" rel="noreferrer">GitHub</a>
+            <a class="button button-secondary" href="https://leetcode.com/u/dev_kumar_dklv/" target="_blank" rel="noreferrer">LeetCode</a>
+          </div>
+        </div>
+
+        <div class="hero-metrics reveal" aria-label="Selected applied AI engineering impact">
+          <article>
+            <span class="metric-value" data-count="3">0</span>
+            <span class="metric-suffix"></span>
+            <span class="metric-label">production agentic AI products shipped</span>
+          </article>
+          <article>
+            <span class="metric-value" data-count="40">0</span>
+            <span class="metric-suffix">%</span>
+            <span class="metric-label">LLM token spend reduction</span>
+          </article>
+          <article>
+            <span class="metric-value" data-count="55">0</span>
+            <span class="metric-suffix">%</span>
+            <span class="metric-label">p95 agent latency reduction</span>
+          </article>
+          <article>
+            <span class="metric-value" data-count="120">0</span>
+            <span class="metric-suffix">K</span>
+            <span class="metric-label">annualized productivity savings</span>
+          </article>
+        </div>
+      </section>
+
+      <section class="section platform-section reveal" id="platform">
+        <div class="section-heading">
+          <p class="eyebrow">Applied Intelligence</p>
+          <h2>Useful AI is not one prompt. It is a measured product loop: grounded context, structured actions, efficient inference, thoughtful guardrails, and continuous feedback.</h2>
+        </div>
+
+        <div class="principle-grid">
+          <article class="principle-card">
+            <span class="card-index">01</span>
+            <h3>Ground the answer</h3>
+            <p>Retrieval, embeddings, reranking, semantic layers, text-to-SQL, and structured outputs make responses traceable to data instead of vibes.</p>
+          </article>
+          <article class="principle-card">
+            <span class="card-index">02</span>
+            <h3>Orchestrate the work</h3>
+            <p>Planner-agent-tool patterns, function calling, workflow state, and fallback paths turn language interfaces into useful product behavior.</p>
+          </article>
+          <article class="principle-card">
+            <span class="card-index">03</span>
+            <h3>Measure behavior</h3>
+            <p>Golden sets, LLM-as-judge scoring, regression suites, drift checks, and KPI-linked telemetry keep model changes honest over time.</p>
+          </article>
+          <article class="principle-card">
+            <span class="card-index">04</span>
+            <h3>Ship with restraint</h3>
+            <p>Model routing, caching, batching, streaming, quantization, distillation, and latency budgets help intelligent features feel instant.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section diagram-section reveal" aria-labelledby="diagram-title">
+        <div class="section-heading">
+          <p class="eyebrow">System Diagram</p>
+          <h2 id="diagram-title">A production AI loop that moves from user intent to grounded context, planned tool use, guided generation, evaluation, guardrails, telemetry, and safer releases.</h2>
+        </div>
+
+        <div class="diagram-shell">
+          <svg class="architecture-diagram" viewBox="0 0 1160 650" role="img" aria-labelledby="svg-title svg-desc">
+            <title id="svg-title">Applied AI production architecture</title>
+            <desc id="svg-desc">User intent flows through retrieval, planning, tool execution, guided generation, guardrails, evaluation, observability, and release decisions.</desc>
+            <defs>
+              <linearGradient id="flowGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%" stop-color="#38bdf8" />
+                <stop offset="35%" stop-color="#2dd4bf" />
+                <stop offset="68%" stop-color="#22c55e" />
+                <stop offset="100%" stop-color="#f59e0b" />
+              </linearGradient>
+              <filter id="softGlow">
+                <feGaussianBlur stdDeviation="4" result="blur" />
+                <feMerge>
+                  <feMergeNode in="blur" />
+                  <feMergeNode in="SourceGraphic" />
+                </feMerge>
+              </filter>
+            </defs>
+
+            <g class="diagram-grid">
+              <path d="M56 90H1104M56 220H1104M56 350H1104M56 480H1104M56 610H1104" />
+              <path d="M156 50V610M330 50V610M504 50V610M678 50V610M852 50V610M1026 50V610" />
+            </g>
+
+            <g class="diagram-node node-input">
+              <rect x="56" y="220" width="194" height="188" rx="8" />
+              <text x="153" y="264">Product Intent</text>
+              <text x="153" y="304">natural language</text>
+              <text x="153" y="338">analytics asks</text>
+              <text x="153" y="372">workflow goals</text>
+            </g>
+
+            <g class="diagram-node">
+              <rect x="302" y="82" width="220" height="136" rx="8" />
+              <text x="412" y="126">Grounding Layer</text>
+              <text x="412" y="162">RAG + reranking</text>
+              <text x="412" y="192">semantic data</text>
+            </g>
+
+            <g class="diagram-node">
+              <rect x="302" y="432" width="220" height="136" rx="8" />
+              <text x="412" y="476">Tool Layer</text>
+              <text x="412" y="512">SQL + APIs</text>
+              <text x="412" y="542">stateful actions</text>
+            </g>
+
+            <g class="diagram-node node-core">
+              <rect x="584" y="194" width="286" height="202" rx="8" />
+              <text x="727" y="242">AI Orchestrator</text>
+              <text x="727" y="284">planning + routing</text>
+              <text x="727" y="320">guided generation</text>
+              <text x="727" y="356">guardrails + memory</text>
+            </g>
+
+            <g class="diagram-node">
+              <rect x="928" y="66" width="180" height="136" rx="8" />
+              <text x="1018" y="110">Evaluation</text>
+              <text x="1018" y="146">golden sets</text>
+              <text x="1018" y="176">LLM judge</text>
+            </g>
+
+            <g class="diagram-node">
+              <rect x="928" y="258" width="180" height="136" rx="8" />
+              <text x="1018" y="302">Telemetry</text>
+              <text x="1018" y="338">latency</text>
+              <text x="1018" y="368">quality drift</text>
+            </g>
+
+            <g class="diagram-node">
+              <rect x="928" y="450" width="180" height="136" rx="8" />
+              <text x="1018" y="494">Release Signal</text>
+              <text x="1018" y="530">regressions</text>
+              <text x="1018" y="560">cost budgets</text>
+            </g>
+
+            <path class="flow-line primary" d="M250 313H302" />
+            <path class="flow-line primary" d="M522 150C562 150 548 294 584 294" />
+            <path class="flow-line primary" d="M522 500C572 500 548 338 584 338" />
+            <path class="flow-line primary" d="M870 254C902 232 894 134 928 134" />
+            <path class="flow-line primary" d="M870 306H928" />
+            <path class="flow-line primary" d="M870 362C902 394 894 518 928 518" />
+
+            <circle class="pulse-dot dot-one" cx="276" cy="313" r="7" />
+            <circle class="pulse-dot dot-two" cx="574" cy="294" r="7" />
+            <circle class="pulse-dot dot-three" cx="898" cy="306" r="7" />
+            <circle class="pulse-dot dot-four" cx="900" cy="518" r="7" />
+
+            <g class="diagram-badge">
+              <rect x="78" y="76" width="178" height="42" rx="8" />
+              <text x="167" y="103">privacy aware</text>
+            </g>
+            <g class="diagram-badge">
+              <rect x="492" y="590" width="220" height="42" rx="8" />
+              <text x="602" y="617">measured behavior</text>
+            </g>
+            <g class="diagram-badge">
+              <rect x="844" y="592" width="218" height="42" rx="8" />
+              <text x="953" y="619">useful outcomes</text>
+            </g>
+          </svg>
+        </div>
+      </section>
+
+      <section class="section stack-section reveal" aria-labelledby="stack-title">
+        <div class="section-heading">
+          <p class="eyebrow">Technical Stack</p>
+          <h2 id="stack-title">Agentic AI, retrieval, model evaluation, data platforms, distributed systems, cloud infrastructure, and production software engineering.</h2>
+        </div>
+        <div class="skill-cloud" aria-label="Skills">
+          <span>Python</span>
+          <span>Java</span>
+          <span>Scala</span>
+          <span>Go</span>
+          <span>TypeScript</span>
+          <span>SQL</span>
+          <span>FastAPI</span>
+          <span>Spring Boot</span>
+          <span>REST</span>
+          <span>gRPC</span>
+          <span>LLMs</span>
+          <span>Foundation Models</span>
+          <span>OpenAI</span>
+          <span>Anthropic</span>
+          <span>Gemini</span>
+          <span>Llama</span>
+          <span>LangChain</span>
+          <span>LlamaIndex</span>
+          <span>Semantic Kernel</span>
+          <span>Google ADK</span>
+          <span>LangGraph</span>
+          <span>PyTorch</span>
+          <span>Hugging Face</span>
+          <span>Embeddings</span>
+          <span>FAISS</span>
+          <span>Chroma</span>
+          <span>pgvector</span>
+          <span>Pinecone</span>
+          <span>RAG</span>
+          <span>Text-to-SQL</span>
+          <span>LLM-as-Judge</span>
+          <span>Golden Sets</span>
+          <span>Drift Monitoring</span>
+          <span>Guardrails</span>
+          <span>Caching</span>
+          <span>Batching</span>
+          <span>Streaming</span>
+          <span>Distillation</span>
+          <span>Quantization</span>
+          <span>Snowflake</span>
+          <span>Trino</span>
+          <span>Presto</span>
+          <span>Spark</span>
+          <span>Kafka</span>
+          <span>Flink</span>
+          <span>Airflow</span>
+          <span>AWS</span>
+          <span>GCP</span>
+          <span>Azure</span>
+          <span>Docker</span>
+          <span>Kubernetes</span>
+          <span>Terraform</span>
+          <span>OpenTelemetry</span>
+          <span>Prometheus</span>
+          <span>Grafana</span>
+        </div>
+      </section>
+
+      <section class="section experience-section reveal" id="experience" aria-labelledby="experience-title">
+        <div class="section-heading">
+          <p class="eyebrow">Experience</p>
+          <h2 id="experience-title">End-to-end AI product delivery, distributed systems, real-time data platforms, and engineering leadership.</h2>
+        </div>
+
+        <div class="timeline">
+          <article class="experience-item">
+            <div class="experience-meta">
+              <span>Mar 2025 - Present</span>
+              <strong>Sprouts AI</strong>
+              <em>Software Engineer, Applied AI - Chicago, IL</em>
+            </div>
+            <ul>
+              <li>Shipped three production-grade agentic AI products end-to-end on OpenAI/Anthropic LLMs in Python/FastAPI - retrieval, planning, multi-step reasoning with tool invocation, evaluation harnesses, guardrails, and on-call telemetry - prototype to production in under six months.</li>
+              <li>Built natural-language data interfaces (text-to-SQL, analytics copilot) over Snowflake, Trino, and Apache Spark lakehouse layers using LangChain + LlamaIndex retrieval with reranking and structured outputs, cutting operator time-to-insight from hours to seconds and lifting recommendation accuracy 35%.</li>
+              <li>Cut LLM token spend ~40% and p95 agent latency ~55% by fine-tuning open-source models (Llama-3, Mistral) for routine tool-call routing, combined with model selection across foundation models, prompt and response caching, request batching, and streaming.</li>
+              <li>Instrumented LLM-as-judge evaluation harnesses, golden sets, behavioral regression tests, and drift monitoring tied to business KPIs - enabling weekly model and prompt rollouts with zero regressions and ~$120K in annualized productivity savings.</li>
+            </ul>
+          </article>
+
+          <article class="experience-item">
+            <div class="experience-meta">
+              <span>Aug 2023 - Mar 2025</span>
+              <strong>Resilience Inc</strong>
+              <em>Software Engineer - Chicago, IL</em>
+            </div>
+            <ul>
+              <li>Rebuilt the company's flagship learning platform on a MERN stack with event-driven backend services and Kafka-based streaming pipelines, reducing p95 page-load latency 30% and lifting weekly active users 25%.</li>
+              <li>Designed and shipped Selena (React Native social-emotional learning app) end-to-end with cross-functional PM/design partners in agile sprints, driving a 40% lift in student engagement in the first quarter post-launch.</li>
+              <li>Built reusable workflow orchestration and integration patterns connecting MongoDB, PostgreSQL, and Kafka with Docker/GitHub Actions CI/CD - patterns later adopted across three internal teams to cut new-integration delivery time ~60%.</li>
+              <li>Fine-tuned open-source transformer models (BERT/DistilBERT) for content ranking and engagement prediction on the learning platform, shipped behind a Python inference service that lifted recommendation click-through ~22% over the heuristic baseline.</li>
+            </ul>
+          </article>
+
+          <article class="experience-item">
+            <div class="experience-meta">
+              <span>Apr 2018 - Aug 2023</span>
+              <strong>Tata Steel</strong>
+              <em>Software Engineer</em>
+            </div>
+            <ul>
+              <li>Digitized end-to-end Learning &amp; Development workflows (POST/PRE IRIS, Coaching &amp; Mentoring, NOPR training) by building cloud-native Java microservices and Angular/Android front-ends, cutting manual workflow time 60% across 30K+ active users.</li>
+              <li>Architected high-availability Spring Boot microservices on a lakehouse-backed data layer that achieved 99.99% uptime and a 40% improvement in API response times via async batching, Redis caching, and a service-discovery layer across 12 production services.</li>
+              <li>Led and mentored a cross-functional team of 10 engineers, authoring technical playbooks and running design-review workshops that shortened release cycles from monthly to weekly and reduced post-release defects ~45%.</li>
+              <li>Built real-time training analytics pipelines on Apache Flink, Spark-Streaming, and Kafka over a Trino/Presto lakehouse query layer - powering sub-minute dashboards across 30K+ users and cutting leadership reporting latency from overnight batch to ~30 seconds.</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="section projects-section reveal" id="projects" aria-labelledby="projects-title">
+        <div class="section-heading">
+          <p class="eyebrow">Selected Work</p>
+          <h2 id="projects-title">Projects spanning AI agents, natural-language data access, market systems, operating systems, distributed pipelines, hardware, and mobile software.</h2>
+        </div>
+
+        <div class="project-toolbar" aria-label="Project filters">
+          <button class="filter-button is-active" type="button" data-filter="all">All</button>
+          <button class="filter-button" type="button" data-filter="ai">AI</button>
+          <button class="filter-button" type="button" data-filter="data">Data</button>
+          <button class="filter-button" type="button" data-filter="systems">Systems</button>
+          <button class="filter-button" type="button" data-filter="product">Product</button>
+        </div>
+
+        <div class="project-grid">
+          <article class="project-card featured" data-tags="ai data product">
+            <div class="project-topline">
+              <span>AI Copilot</span>
+              <span>Python + LangChain</span>
+            </div>
+            <h3>AskMyStore</h3>
+            <p>Agentic analytics assistant with retrieval, reranking, natural-language querying, and tool-calling over operational store data.</p>
+            <div class="project-links">
+              <a href="https://askmystore.vercel.app/" target="_blank" rel="noreferrer">Demo</a>
+              <a href="https://github.com/devthedevil/AskMyStore" target="_blank" rel="noreferrer">Source</a>
+            </div>
+          </article>
+
+          <article class="project-card featured" data-tags="ai data product">
+            <div class="project-topline">
+              <span>Multi-Agent AI</span>
+              <span>LangGraph</span>
+            </div>
+            <h3>TradeSentinel</h3>
+            <p>Multi-agent market intelligence system with planning, tool invocation, real-time data ingestion, and response-quality evaluation.</p>
+            <div class="project-links">
+              <a href="https://tradesentinel.vercel.app/" target="_blank" rel="noreferrer">Demo</a>
+              <a href="https://github.com/devthedevil/tradesentinel" target="_blank" rel="noreferrer">Source</a>
+            </div>
+          </article>
+
+          <article class="project-card" data-tags="ai product">
+            <div class="project-topline">
+              <span>RAG Search</span>
+              <span>LangChain</span>
+            </div>
+            <h3>LangChain Chat with Search</h3>
+            <p>Search-augmented LLM application demonstrating retrieval, tool use, conversational context, and practical question-answering flows.</p>
+            <div class="project-links">
+              <a href="https://github.com/devthedevil/LangChain-Chat-with-Search" target="_blank" rel="noreferrer">Source</a>
+            </div>
+          </article>
+
+          <article class="project-card" data-tags="ai data">
+            <div class="project-topline">
+              <span>Publication</span>
+              <span>Recommendation Systems</span>
+            </div>
+            <h3>Comparative Study of Movie Recommendation Systems</h3>
+            <p>IEEE-published comparative recommendation-system research with notebook implementation for model experimentation and evaluation.</p>
+            <div class="project-links">
+              <a href="https://ieeexplore.ieee.org/document/10094480" target="_blank" rel="noreferrer">Paper</a>
+              <a href="https://github.com/devthedevil/Comparative-Study-of-Movie-Recommendation-System/blob/main/Netflix_Movie.ipynb" target="_blank" rel="noreferrer">Source</a>
+              <a href="https://drive.google.com/file/d/1rayr6Cht6quyLUJOXWOAcBi_rxQp2Ol0/view" target="_blank" rel="noreferrer">Certificate</a>
+            </div>
+          </article>
+
+          <article class="project-card" data-tags="data systems">
+            <div class="project-topline">
+              <span>Streaming Data</span>
+              <span>Kafka</span>
+            </div>
+            <h3>Real-time Stock Market Analysis Pipeline</h3>
+            <p>Streaming market-data pipeline for ingesting, processing, and analyzing live financial signals with scalable backend components.</p>
+            <div class="project-links">
+              <a href="https://github.com/devthedevil/Realtime-Stock-Market-Analysis" target="_blank" rel="noreferrer">Source</a>
+            </div>
+          </article>
+
+          <article class="project-card" data-tags="data systems">
+            <div class="project-topline">
+              <span>Market Data</span>
+              <span>C++</span>
+            </div>
+            <h3>CME MDP 3.0 Multicast Feed Handler</h3>
+            <p>Low-level feed-handler project for multicast market data, protocol parsing, throughput-sensitive processing, and systems reliability.</p>
+            <div class="project-links">
+              <a href="https://github.com/devthedevil/CME-Multicast-Market-Data-Feed-Handler-C-" target="_blank" rel="noreferrer">Source</a>
+            </div>
+          </article>
+
+          <article class="project-card" data-tags="systems">
+            <div class="project-topline">
+              <span>Operating Systems</span>
+              <span>Kernel</span>
+            </div>
+            <h3>Experimental Operating System</h3>
+            <p>Operating-system implementation work covering process control, memory, system calls, and core low-level software design.</p>
+            <div class="project-links">
+              <a href="https://github.com/devthedevil/EXPOS" target="_blank" rel="noreferrer">Source</a>
+            </div>
+          </article>
+
+          <article class="project-card" data-tags="systems">
+            <div class="project-topline">
+              <span>Linux Systems</span>
+              <span>C</span>
+            </div>
+            <h3>Character Device Driver</h3>
+            <p>Linux character-device driver project focused on kernel interfaces, device operations, low-level debugging, and C systems programming.</p>
+            <div class="project-links">
+              <a href="https://github.com/devthedevil/Character-Device-Driver" target="_blank" rel="noreferrer">Source</a>
+            </div>
+          </article>
+
+          <article class="project-card" data-tags="systems">
+            <div class="project-topline">
+              <span>Processor Design</span>
+              <span>Hardware</span>
+            </div>
+            <h3>16-Bit RISC Processor</h3>
+            <p>Hardware-lab processor design work that connects computer architecture fundamentals with implementation-level reasoning.</p>
+            <div class="project-links">
+              <a href="https://github.com/devthedevil/Hardware-lab" target="_blank" rel="noreferrer">Source</a>
+            </div>
+          </article>
+
+          <article class="project-card" data-tags="product">
+            <div class="project-topline">
+              <span>Application</span>
+              <span>Full Stack</span>
+            </div>
+            <h3>STRANGERS</h3>
+            <p>Product-oriented application project showing end-to-end implementation, interface thinking, and practical feature delivery.</p>
+            <div class="project-links">
+              <a href="https://github.com/devthedevil/Strangers" target="_blank" rel="noreferrer">Source</a>
+            </div>
+          </article>
+
+          <article class="project-card" data-tags="product">
+            <div class="project-topline">
+              <span>iOS App</span>
+              <span>Swift</span>
+            </div>
+            <h3>Pitch Perfect</h3>
+            <p>iOS application project exploring audio capture, playback transformation, mobile UI, and app-level software craftsmanship.</p>
+            <div class="project-links">
+              <a href="https://github.com/devthedevil/Pitch_Perfect" target="_blank" rel="noreferrer">Source</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section education-section reveal" aria-labelledby="education-title">
+        <div class="section-heading">
+          <p class="eyebrow">Education & Research</p>
+          <h2 id="education-title">Computer science foundations with research, implementation, and continuing algorithm practice.</h2>
+        </div>
+        <div class="education-grid">
+          <article>
+            <span>Graduate</span>
+            <h3>Illinois Institute of Technology</h3>
+            <p>M.S., Computer Science</p>
+          </article>
+          <article>
+            <span>Undergraduate</span>
+            <h3>National Institute of Technology Calicut</h3>
+            <p>B.Tech, Computer Science</p>
+          </article>
+          <article>
+            <span>Publication</span>
+            <h3>IEEE INCOFT 2022</h3>
+            <p>A Comparative Study of Movie Recommendation Systems.</p>
+            <a href="https://ieeexplore.ieee.org/document/10094480" target="_blank" rel="noreferrer">Read Paper</a>
+          </article>
+        </div>
+      </section>
+
+      <section class="section contact-section reveal" id="contact" aria-labelledby="contact-title">
+        <div class="contact-copy">
+          <p class="eyebrow">Contact</p>
+          <h2 id="contact-title">Open to building AI systems that become dependable product infrastructure.</h2>
+          <p>Chicago, IL - devkumar.dklv@gmail.com - +1-312-532-8223</p>
+        </div>
+        <div class="contact-actions">
+          <a class="button button-primary" href="mailto:devkumar.dklv@gmail.com">Email</a>
+          <a class="button button-secondary" href="https://github.com/devthedevil" target="_blank" rel="noreferrer">GitHub</a>
+          <a class="button button-secondary" href="https://leetcode.com/u/dev_kumar_dklv/" target="_blank" rel="noreferrer">LeetCode</a>
+        </div>
+      </section>
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
