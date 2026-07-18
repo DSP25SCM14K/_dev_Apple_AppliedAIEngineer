@@ -1,0 +1,4 @@
+import type {Metadata} from "next";
+import "./globals.css";
+export const metadata:Metadata={metadataBase:new URL("https://dsp25scm14k.github.io/_dev_Apple_AppliedAIEngineer/"),title:"Dev Kumar | Applied AI Engineer",description:"Dev Kumar builds trusted agentic platforms, retrieval systems, evaluation pipelines, data infrastructure, and native AI experiences.",openGraph:{title:"Dev Kumar | Context becomes capability",description:"Agentic systems, trusted knowledge, evaluation, provenance, and human judgment.",images:["/og.png"]},twitter:{card:"summary_large_image",title:"Dev Kumar | Context becomes capability",description:"Agentic systems, trusted knowledge, evaluation, provenance, and human judgment.",images:["/og.png"]},icons:{icon:"/_dev_Apple_AppliedAIEngineer/favicon.svg"}};
+export default function RootLayout({children}:{children:React.ReactNode}){return <html lang="en"><body>{children}</body></html>}

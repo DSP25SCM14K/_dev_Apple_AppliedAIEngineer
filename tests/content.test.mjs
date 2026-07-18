@@ -1,0 +1,5 @@
+import assert from "node:assert/strict";import{readFile}from"node:fs/promises";import test from"node:test";
+const page=await readFile(new URL("../app/page.tsx",import.meta.url),"utf8");const css=await readFile(new URL("../app/globals.css",import.meta.url),"utf8");
+test("contains all 15 experience bullets",()=>{const b=page.slice(page.indexOf("const experience"),page.indexOf("const projects"));assert.equal((b.match(/^\"/gm)??[]).length,15);assert.match(b,/72% to 91%/);assert.match(b,/99\.99% uptime/)});
+test("contains 16 projects and required links",()=>{const b=page.slice(page.indexOf("const projects"),page.indexOf("const phrases"));assert.equal((b.match(/^\[\"/gm)??[]).length,16);assert.match(page,/ieeexplore\.ieee\.org\/document\/10094480/);assert.match(page,/ask-my-store\.vercel\.app/);assert.match(page,/oxide-hv\.vercel\.app/)});
+test("honors portfolio constraints",()=>{assert.doesNotMatch(page,/linkedin/i);assert.doesNotMatch(page,/<footer/i);assert.match(css,/prefers-reduced-motion:reduce/) });
